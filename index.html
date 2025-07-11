@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Julian Diaz</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <header class="header">
+    
+            <a href="#" class="Logo">Portafolio</a>
+            
+            <div class="menu " onclick="toggle()">
+
+                <i class='bx bx-menu' id="menu" ></i>
+            </div>
+            
+        <nav class="navbar">
+            <ul>
+            <a href="#home" style="--clr:1" class=" active">Home</a>
+            <a href="#about" style="--clr:2">About</a>
+            <a href="#service" style="--clr:3">Services</a>
+            <a href="#portfolio" style="--clr:4">Portafolio</a>
+            <a href="#contact" style="--clr:5">Contact</a>
+        </ul>
+        </nav>
+        
+            
+        
+    </header>
+<section class="home" id="home">
+    <div class="home-detail">
+        <h3>Hola yo soy</h3>
+        <h1> Julian Diaz</h1>
+        <h3>Y soy <span class="textline"></span></h3>
+        <p>Me apasiona programar y aprender cosas nuevas cada día. Disfruto trabajar en equipo, compartir ideas y construir soluciones que realmente aporten valor.</p>
+        <div class="social-media">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+        </div>
+        <button class="btn">Download CV</button>
+        
+    </div>
+    <div class="home-img">
+        <img src="img/julian.png" alt="" class="">
+
+    </div>
+    
+</section>
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="img/julian.png" alt="" class="">
+    </div>
+    <div class="about-section">
+        <h2 class="allheading">About<span> Us</span></h2>
+        <h3>Full Stack Developer</h3>
+        <p>Soy un Desarrollador Web Full Stack, con pasión por construir aplicaciones web completas, eficientes y centradas en la experiencia del usuario. Me especializo en desarrollo tanto del lado del cliente (frontend) como del servidor (backend), creando soluciones integrales.</p>
+        
+    </div>
+</section>
+
+<section class="tech-section" id="tecnologias">
+    <h2>Tecnologías <span> que manejo</span> </h2>
+    <div class="tech-grid">
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <span>HTML5</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        <span>CSS3</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        <span>GitHub</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png" alt="Tailwind">
+        <span>Tailwind</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        <span>React</span>
+      </div>
+       <div class="tech-item">
+        <img src="data:image/png;base64,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" alt="React">
+        <span>JQuery</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*-Yj3HpcmEuO7brKrfrdhOA.png" alt="React">
+        <span>Git </span>
+      </div>
+      <div class="tech-item">
+        <img src="https://ultramsg.com/home/assets/images/articles/php.jpg" alt="React">
+        <span>PHP </span>
+      </div>
+      <div class="tech-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPJfBanIKa44jeVx8bnWb0jYX8kzPhXP84aw&s">
+        <span>MYSQL </span>
+      </div>
+      <div class="tech-item">
+        <img src="https://img-c.udemycdn.com/course/750x422/1245130_efdb_10.jpg">
+        <span>BOOSTRAP5 </span>
+      </div>
+      <div class="tech-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzAxIzs2yRTPxONA1yBwMZdhkNwlqmIpxFug&s">
+        <span>WOORDPRESS</span>
+      </div>
+    </div>
+  </section>
+
+<section class="service" id="service">
+    <h2 class="allheading">Our<span>Services</span></h2>
+    <div class="service-section">
+
+    <div class="servece-box">
+        <i class='bx bx-code-alt' style='color:#ffffff' ></i>
+        <h3>Web Development</h3>
+        <p>Desarrollador web con experiencia en HTML, CSS y JavaScript, especializado en la creación y personalización de sitios web responsivos y funcionales. Capaz de implementar soluciones tanto del lado del cliente como del servidor, optimizando el rendimiento y la seguridad para ofrecer una experiencia de usuario fluida, rápida y confiable.<span id="moretxt1" style="color: #ffffff;" style="display: none;"> </span> </p>
+        <a href="#"id="showMoreLink" class="btn">Contactar</a>
+    </div>
+    <div class="servece-box">
+        <i class='bx bxl-wordpress' style='color:#ffffff' ></i>
+        <h3>WordPress</h3>
+        <p id="text">Tengo experiencia en administrar páginas de WordPress, crear y personalizar páginas<span id="moretxt2" style="color: #ffffff;" style="display: none;"> utilizando editores y constructores visuales, y alojar sitios web, optimizando el rendimiento del servidor para asegurar una experiencia de usuario fluida y segura.</span> </p>
+        <a href="#"id="showMoreLink2" class="btn">Contactar</a>
+    </div>
+    <div class="servece-box">
+        <i class='bx bxl-windows' style='color:#ffffff'  ></i>
+        <h3>Windows</h3>
+        <p>Brindo soporte técnico especializado en sistemas operativos Windows, incluyendo instalación, configuración, mantenimiento y solución de problemas. Tengo experiencia en la optimización del rendimiento, recuperación de sistemas, eliminación de virus y mejora de la seguridad del equipo, asegurando un funcionamiento estable y eficiente para el usuario final.<span id="moretxt3" style="color: #ffffff;" style="display: none;"> .</span> </p>
+        <a href="#"id="showMoreLink3" class="btn">Contactar</a>
+    </div>
+</div>
+
+</section>
+
+<section class="portfolio" id="portfolio">
+ <h2 class="allheading">Recent <span>Project</span></h2>
+</div>
+ <div class="portfolio-section">
+ 
+ <div class="portfolio-box">
+    <img src="img/ladrillera.jpg" alt="">
+    <div class="portfolio-head">
+        <h4>Ladrillera Valledupar</h4>
+        <p>Sitio web responsivo para ladrillera, con galería, catálogo descargable, productos, formulario conectado a base de datos, y SEO optimizado. Desarrollado con HTML, JS, PHP y MySQL.</p>
+        <a href="#"><i class='bx bx-link-external'></i></a>
+    </div>
+</div>
+<div class="portfolio-box">
+    <img src="img/tuinnovate.png" alt="">
+    <div class="portfolio-head">
+        <h4>Tuinnovate</h4>
+        <p>Sitio web para venta de productos y servicios tecnológicos, con catálogo interactivo, blog de noticias y formulario de contacto. Desarrollado con HTML, CSS y JavaScript.</p>
+        <a href="#"><i class='bx bx-link-external'></i></a>
+    </div>
+</div>
+<div class="portfolio-box">
+    <img src="img/Metaverse.png" alt="">
+    <div class="portfolio-head">
+        <h4>Metaverse</h4>
+        <p>Sitio web de productos futuristas e innovadores, desarrollado con HTML, CSS y Bootstrap. Diseño moderno</p>
+        <a href="#"><i class='bx bx-link-external'></i></a>
+    </div>
+</div>
+<div class="portfolio-box">
+    <img src="img/Tokners.png" alt="">
+    <div class="portfolio-head">
+        <h4>Tokners</h4>
+        <p>Sitio web inspirado en tokens digitales y tecnología blockchain. Totalmente responsivo, desarrollado con HTML, CSS y JavaScript.</p>
+        <a href="#"><i class='bx bx-link-external'></i></a>
+    </div>
+</div>
+
+<div class="portfolio-box">
+    <img src="img/baluartess.png" alt="">
+    <div class="portfolio-head">
+        <h4>Baluartes Culturales </h4>
+        <p>Sitio web cultural sobre el folclor vallenato, que resalta talentos y obras artísticas del género. Totalmente responsivo, desarrollado con HTML, CSS y JavaScript.</p>
+        <a href="#"><i class='bx bx-link-external'></i></a>
+    </div>
+</div>
+
+<div class="portfolio-box">
+    <img src="img/Veterinaria.png" alt="">
+    <div class="portfolio-head">
+        <h4>Veterinaria</h4>
+        <p>Sitio web informativo para veterinarias, con servicios, atención médica, formulario de contacto y diseño responsivo. Desarrollado con HTML, CSS y JavaScript.</p>
+        <a href="#"><i class='bx bx-link-external'></i></a>
+    </div>
+</div>
+
+ </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="allheading">Contact <span>Us</span></h2>
+    <form action="#">
+    <div class="input-box">
+        <input type="text" placeholder="Full name">
+        <input type="email" placeholder="Email">
+    </div>
+    <div class="input-box">
+        <input type="tel" placeholder="Mobile Number">
+        <input type="text" placeholder="Subject for">
+    </div>
+    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+    <input type="submit"class="btn"value="Send Messaage">
+    
+</form>
+</section>
+
+<footer class="footer">
+    <div class="text">
+        <p>Copyright@2024 by Oscar Diaz - All Right Reserved</p>
+        
+    </div>
+    <div class="footerUp">
+      <a href="#"> <i class='bx bx-chevrons-up' ></i></a>
+    </div>
+</footer>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="index.js"></script>  <!-- Enlace a tu archivo JavaScript -->
+</body>
+</html>
